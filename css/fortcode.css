@@ -2001,6 +2001,12 @@ p {
     padding-top: 150px;
     font-size: 27px;
   }
+  .section-3 {
+    padding-top: 60px;
+  }
+  .section-3.hide {
+    padding-top: 0px;
+  }
   .book-tour-h1 {
     margin-top: 20px;
     margin-bottom: 0px;
@@ -2316,7 +2322,7 @@ p {
     font-size: 32px;
   }
   .section-3 {
-    padding: 60px 30px;
+    padding: 20px 30px 60px;
   }
   .div-block-36 {
     margin-bottom: 0px;
@@ -2631,6 +2637,10 @@ p {
     padding-right: 30px;
     padding-left: 30px;
   }
+  .container.hide {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
   .heading-4 {
     width: 252px;
     height: 69px;
@@ -2768,8 +2778,8 @@ p {
     margin-top: -60px;
   }
   .form {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .form-h1 {
     max-width: 303px;
@@ -2783,6 +2793,10 @@ p {
     margin-top: 10px;
     padding-top: 100px;
     font-size: 28px;
+  }
+  .section-3 {
+    padding-right: 0px;
+    padding-left: 0px;
   }
   .book-tour-h1 {
     max-width: 303px;
