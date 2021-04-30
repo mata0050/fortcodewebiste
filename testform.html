@@ -1,20 +1,27 @@
 <form name="contact" method="POST" data-netlify="true">
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>   
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Your Role: <select name="role[]" multiple>
-      <option value="leader">Leader</option>
-      <option value="follower">Follower</option>
-    </select></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
+  <div class="w-form">
+    <form method="POST" class="form" data-netlify="true">
+      <div class="student-info">
+        <h1 class="form-h1"><span class="orange-2">Student Information</span></h1><input type="text" class="w-input" maxlength="256" name="First-Name" data-name="First Name" placeholder="First Name" id="First-Name" required=""><input type="text" class="w-input" maxlength="256" name="Surname" data-name="Surname" placeholder="Surname" id="Surname" required=""><input type="email" class="w-input" maxlength="256" name="Student-Email" data-name="Student Email" placeholder="Email" id="Student-Email" required=""><input type="tel" class="w-input" maxlength="256" name="DOB" data-name="DOB" placeholder="DOB (Date of Birth)  mm/dd/yyyy" id="DOB" required=""><input type="text" class="w-input" maxlength="256" name="Street-address" data-name="Street address" placeholder="Street address" id="Street-address" required=""><input type="text" class="w-input" maxlength="256" name="City" data-name="City" placeholder="City" id="City" required=""><input type="text" class="w-input" maxlength="256" name="City-Country" data-name="City/ Country" placeholder="City / Country" id="City-Country" required=""><select id="Gender" name="Gender" data-name="Gender" required="" class="w-select">
+          <option value="">Gender</option>
+          <option value="Female">Female</option>
+          <option value="Male">Male</option>
+        </select>
+      </div>
+      <h1 class="form-h1"><span class="orange">Educational Information</span></h1><input type="text" class="w-input" maxlength="256" name="Name-of-school-last-attended" data-name="Name of school last attended" placeholder="Name of school last attended" id="Name-of-school-last-attended" required=""><input type="text" class="w-input" maxlength="256" name="Latest-school-year-attended-grade-form" data-name="Latest school year attended (grade/form)" placeholder="Latest school year attended (grade/form)" id="Latest-school-year-attended-grade-form" required=""><select id="Applying-For" name="Applying-For" data-name="Applying For.." required="" class="w-select">
+        <option value="">Applying For O&#x27; or A&#x27; Level</option>
+        <option value="O&#x27; Level">O&#x27; Level</option>
+        <option value="A&#x27; Level">A&#x27; Level</option>
+      </select>
+      <div>
+        <h1 class="form-h1"><span class="orange">Parent / Guardian Information</span></h1><input type="text" class="w-input" maxlength="256" name="Parent-First-Name" data-name="Parent First Name" placeholder="First name" id="Parent-First-Name" required=""><input type="text" class="w-input" maxlength="256" name="Parent-Surname" data-name="Parent Surname" placeholder="Surname" id="Parent-Surname" required=""><input type="tel" class="w-input" maxlength="256" name="Parent-Cell-phone" data-name="Parent Cell phone" placeholder="Cell phone" id="Parent-Cell-phone" required=""><input type="email" class="w-input" maxlength="256" name="Parent-Email-address" data-name="Parent Email address" placeholder="Email address" id="Parent-Email-address" required="">
+      </div><input type="submit" value="Send" data-wait="Please wait..." class="submit-button w-button">
+    </form>
+    <div class="w-form-done">
+      <div>Thank you! Your submission has been received!</div>
+    </div>
+    <div class="w-form-fail">
+      <div>Oops! Something went wrong while submitting the form.</div>
+    </div>
+  </div>
 </form>
